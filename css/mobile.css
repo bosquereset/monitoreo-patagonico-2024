@@ -659,4 +659,6 @@ border-radius: 4rem;
 
 .form--section{
   background-color: rgba(0, 0, 50, 0.8);
+  padding-bottom: 12rem;
+  padding-top: 12rem;
 }
