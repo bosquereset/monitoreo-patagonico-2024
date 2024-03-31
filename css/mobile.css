@@ -118,7 +118,7 @@ p{
 font-family: 'Inter', sans-serif;
 font-size: 1.6rem;
 color:var(--neutro-50);
-padding: 8px;
+padding: 3rem;
 }
 a{
 text-decoration: none;
@@ -141,7 +141,6 @@ color: var(--neutro-50);
     color: var(--neutro-50);
     font-size: 2.4rem;
     font-weight: 700;
-    border-radius: 16px;
     transition: 0.3s;
   }
 
@@ -319,8 +318,6 @@ font-size: 2.4rem;
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 8px;
- 
   }
 
 
@@ -337,7 +334,6 @@ font-size: 2.4rem;
   padding-bottom:16px;
   padding-top:16px;
   z-index: 2;
-  border-radius: 8px;
   }
   
   .sales{
@@ -510,17 +506,14 @@ text-decoration: underline;
 width: 100%;
 height: auto;
 z-index: 3;
-border-radius: 16px;
 }
 .contact--section h3{
 font-size: 3.2rem;
 color:var(--primary-300);
-padding: 8px;
   }
 .contact--section p{
 font-size: 1.6rem;
 color: var(--neutro-50);
-padding: 8px;
 }
 
   
@@ -556,11 +549,11 @@ padding: 8px;
     }
 
     .social-media img{
-      width: 13vw;
+      width: 12vw;
       height: auto;
       max-width: 16vw;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       padding-left: 8px;
       padding-right: 8px;
     }
@@ -583,20 +576,24 @@ padding: 8px;
       }  
 
       label {
+        width: 100%;
+        height: auto;
         font-family: Arial, Helvetica, sans-serif;
         font-weight:600;
         font-size: 2rem;
-        color:rgba(244,255,255,1);
+        color:rgb(255, 0, 0);
         display: block;
-        margin-top: 1.618rem;
-        margin-bottom: 3rem;
+        padding-top: 1.618rem;
+        padding-bottom: 1.618rem;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       input[type="text"], input[type="email"], select {
         width: 100%;
         padding: .8rem;
         font-size: 2rem;
-        color:rgba(255, 255, 255, 0.489);
+        color:rgba(0, 0, 0, 0.8);
         margin-top: 1.618rem;
         margin-bottom: 3rem;
         border: .1rem solid #000000;
@@ -616,3 +613,50 @@ padding: 8px;
       button:hover {
         background-color: #000000;
       }
+
+
+.grid--img{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+place-content: center;
+background-color: rgba(18, 5, 55, 0.696);
+padding-top: 88px;
+padding-bottom: 88px;
+}
+
+.grid--img img{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 0 auto;
+  justify-content: center;
+align-items: center;
+place-content: center;
+border-radius: 4rem;
+}
+
+.grid--img article div{
+  border-bottom: .222rem solid rgba(155, 0, 0, 0.8);
+  text-align: center;
+  padding: 2rem;
+}
+
+.grid--img article div p{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.form--section{
+  background-color: rgba(0, 0, 50, 0.8);
+}
