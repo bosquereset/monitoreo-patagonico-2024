@@ -65,6 +65,106 @@
     </div>
 </section>
 
+
+<style>
+  /* Estilos opcionales para mejorar la apariencia del formulario */
+
+ 
+  
+</style>
+
+<section class="form--section">
+<article>
+<h2>Formulario de Solicitud de Servicio de Seguridad Integral</h2>
+
+<form id="securityServiceForm">
+  <label for="fullName">Nombre completo:</label>
+  <input type="text" id="fullName" name="fullName" required>
+
+  <label for="address">Dirección:</label>
+  <input type="text" id="address" name="address" required>
+
+  <label for="city">Ciudad:</label>
+  <input type="text" id="city" name="city" required>
+
+  <label for="country">País:</label>
+  <input type="text" id="country" name="country" required>
+
+  <label for="phone">Número de teléfono:</label>
+  <input type="text" id="phone" name="phone" required>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="propertyType">Tipo de propiedad:</label>
+  <select id="propertyType" name="propertyType" required>
+    <option value="">Seleccione...</option>
+    <option value="Residencial">Residencial</option>
+    <option value="Comercial">Comercial</option>
+    <option value="Industrial">Industrial</option>
+  </select>
+
+  <label for="propertySize">Tamaño de la propiedad (m²):</label>
+  <input type="text" id="propertySize" name="propertySize" required>
+
+  <label for="serviceType">Tipo de servicio requerido:</label>
+  <input type="checkbox" id="alarmMonitoring" name="serviceType" value="Monitoreo de alarmas"> Monitoreo de alarmas<br>
+  <input type="checkbox" id="onSiteSecurity" name="serviceType" value="Vigilancia en sitio"> Vigilancia en sitio<br>
+  <input type="checkbox" id="securityInstallation" name="serviceType" value="Instalación de sistemas de seguridad"> Instalación de sistemas de seguridad<br>
+  <input type="checkbox" id="patrolling" name="serviceType" value="Patrullaje"> Patrullaje<br>
+  <input type="checkbox" id="otherService" name="serviceType"> Otro: <input type="text" id="otherServiceInput" name="otherServiceInput"><br>
+
+  <label for="servicePurpose">Propósito del servicio:</label>
+  <input type="text" id="servicePurpose" name="servicePurpose" required>
+
+  <label for="serviceSchedule">Horario de servicio:</label>
+  <input type="text" id="serviceSchedule" name="serviceSchedule" required>
+
+  <label for="serviceStart">Fecha de inicio del servicio:</label>
+  <input type="date" id="serviceStart" name="serviceStart" required>
+
+  <label for="budget">Presupuesto aproximado:</label>
+  <input type="text" id="budget" name="budget" required>
+
+  <label for="additionalInfo">Información adicional:</label>
+  <textarea id="additionalInfo" name="additionalInfo"></textarea>
+
+  <label for="howDidYouHear">¿Cómo se enteró de nuestros servicios?</label>
+  <input type="text" id="howDidYouHear" name="howDidYouHear" required>
+
+  <button type="submit">Enviar formulario</button>
+</form>
+</article>
+</section>
+
+<script>
+  const form = document.getElementById('securityServiceForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+    // Validar que se haya seleccionado al menos un tipo de servicio
+    const serviceTypeInputs = document.querySelectorAll('input[name="serviceType"]');
+    let serviceTypeChecked = false;
+    serviceTypeInputs.forEach(input => {
+      if (input.checked) {
+        serviceTypeChecked = true;
+      }
+    });
+
+    if (!serviceTypeChecked) {
+      alert('Por favor, seleccione al menos un tipo de servicio.');
+      return;
+    }
+
+    // Enviar formulario si pasa la validación
+    alert('El formulario se envió exitosamente.');
+    form.reset();
+  });
+</script>
+
+
+
 <section id="about" class="about--section">
   <h2>Nosotros</h2> 
   <article class="about--section-text">
