@@ -1,0 +1,74 @@
+@media (min-width: 768px){
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar__links {
+    position: relative;
+    display: flex;
+    gap: 32px;
+    top: 0px;
+    padding: 8px;
+    font-size: 1.6rem;
+    background-color: transparent;
+  }
+
+  .navbar__link {
+    color:var(--neutro-50);
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 8px;
+    background-color: transparent;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+
+
+    .impact-section{
+        max-width: 640px;
+      }
+      .about--section{
+        max-width: 640px;
+      }
+      .services--section{
+        max-width: 640px;
+      }
+      .contact--section{
+        max-width: 640px;
+      }
+
+      .telephones--section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-300);
+        width: 100%;
+        height: auto;
+        margin:0 auto;
+        padding-bottom:16px;
+        padding-top:16px;
+        }
+
+        .sales img{
+            max-width: 4vw;
+            color:var(--neutro-50);
+          }
+        .support img{
+            max-width: 4vw;
+            color:var(--neutro-50);
+          }
+
+          .social-media img{
+            width: 6vw;
+            max-width: 8vw;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+}
